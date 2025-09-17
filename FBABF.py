@@ -38,7 +38,7 @@ def first_step():
     # Direct
     os.system(f"xdg-open {facebook_link}")
 
-    input("\n[↩] Jab join kar lo tab Enter dabao...")
+    input("\n[↩] CLICK ENTER...")
 
 def check_key():
     user_key = input("\n[?] Enter your key: ")
