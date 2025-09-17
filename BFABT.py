@@ -17,24 +17,26 @@ from datetime import datetime
 
 import os, sys
 
-# Tumhara WhatsApp channel link
-channel_link = "https://whatsapp.com/channel/0029VbAjFyMFXUudqKqwkN3B"
+# FACEBOOK LINK
+facebook_link = "https://www.facebook.com/Fedz.duran"
 
-# Valid keys (channel par available hogi)
-approved_keys = ["AHB-ALI-xdhhsjbudfauvz123@@##$$$dyvyhv-2025"]
+# Valid keys (DM TO AVAIL!!)
+approved_keys = [
+    "FJD-PrimaryKey-2025",
+    "FJD-BackupKey-ABC"
+]
 
 def first_step():
     os.system("clear")
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
     print("        🔒 Script Locked 🔒")
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
-    print("\033[1;32m JOIN OUR WHATSAPP CHANNEL ✅ \033[0m\n")
-    print("\033[1;32m KEY APKO CHANEL SA MILY GI ✅ \033[0m\n")
-    print("[!] Pehle WhatsApp Channel par join karo.")
-    print(f"[+] Channel Link: {channel_link}\n")
+    print("\033[1;32m DM ME FOR KEY ✅ \033[0m\n")
+    print("\033[1;32m MESSAGE ME TO GET KEY ✅ \033[0m\n")
+    print(f"[+] Facebook Link: {facebook_link}\n")
 
-    # Yeh direct WhatsApp channel open karega
-    os.system(f"xdg-open {channel_link}")
+    # Direct
+    os.system(f"xdg-open {facebook_link}")
 
     input("\n[↩] Jab join kar lo tab Enter dabao...")
 
@@ -46,13 +48,13 @@ def check_key():
         print("\n[×] Invalid key! Dobara Channel par jao.")
         sys.exit()
 
-# Pehle channel open hoga
+# 1st
 first_step()
 
-# Phir key check hoga
+# Then the key will be checked
 check_key()
 
-# Tool ka main code yahan likho
+# SUCCESS
 print(">>> Tool Successfully Unlocked <<<")
 
 
@@ -73,7 +75,7 @@ requests.urllib3.disable_warnings()
 
 # Initial setup and promotion
 os.system('clear')
-print(' \x1b[38;5;46mAHB SERVER LOADING....')
+print(' \x1b[38;5;46mFJD SERVER LOADING....')
 
 
 os.system('pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests')
@@ -193,7 +195,7 @@ def window1():
 sys.stdout.write('\x1b]2;𓆩【A H B 】𓆪 \x07')
 
 
-    # AHB Clover Logo - Green - Version 2.5
+    # FJD Clover Logo - Green - Version 2.5
 def ____banner____():
     if 'win' in sys.platform:
         os.system('cls')
@@ -202,12 +204,11 @@ def ____banner____():
     
     print("""\033[1;32m
         
-               ░█████╗░  ██╗░░██╗  ██████╗░
-               ██╔══██╗  ██║░░██║  ██╔══██╗
-               ███████║  ███████║  ██████╦╝
-               ██╔══██║  ██╔══██║  ██╔══██╗
-               ██║░░██║  ██║░░██║  ██████╦╝
-               ╚═╝░░╚═╝  ╚═╝░░╚═╝  ╚═════╝░
+███████ ███████ ██████  
+██      ██      ██   ██ 
+█████   █████   ██████  
+██      ██      ██   ██ 
+██      ███████ ██   ██ 
 \033[0m""")
 
 
