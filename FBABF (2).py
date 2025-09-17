@@ -17,8 +17,8 @@ from datetime import datetime
 import os, sys
 ZPEPlUjeNUkwvZImsaIQPppDniDSqoYg = "https://www.facebook.com/Fedz.duran"
 uHGJKmjdmkNlnfcLhXiOkuVuLatmSwgA = [
-    "FJD-PrimaryKey-2025",
-    "FJD-BackupKey-ABC"
+    "FJD-XJEMSDKIDSNZ",
+    " "
 ]
 def EFerEaEhYgKuAygMdBVhTSrSXruoJCAP():
     os.system("clear")
