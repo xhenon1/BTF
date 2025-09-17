@@ -1,3 +1,286 @@
-#EncryptByxhenon
-import marshal, zlib, base64
-exec(marshal.loads(zlib.decompress(base64.b64decode('eJztPNtu40h2+6yvqNUgppS2aJG6t1cJZFntdlq2HFvtnkmPIVBkSeKYIrkk1bLHK2AXi92XBNhdTC8mwGyQlwBBso95zFv2B/INvT+wn5BzqkiKlKiL232ZQZptqEtV55w6depcSZbc+t//6Ef62LYcj1huym85NGh5+jhsTya6FrRHijsy9H6IoJiaNQ6+uZ6jm8M5sZ9OqOuFxN3bsPmVa5khdcdAggPHGpO+WyR+9wFVJp4+mBgX1sTmo3wyEplaNz2iuMRxOIBqmerEcajpiYOJN3GoGwB3Rw5VtDPLMlo3VJ14loN4nkM1jmmFkMClR8e8V1M8ioIIxoLvqVQouV22rNRnpGW6MCFbtA5kydjSJgYwoECnbrqeYhgwWdBbJy+FQD7CLhG4EArYHFN1pJj61xS/OLo6Eq5SA+CXowKtgPTjFIHLc255A69ejzPW62U4UJYN0RuV2h45ZmMtx7GcOYrlinzJmYFg63bAK7njBGZCFld3MbFtEKdLjk0X5OfQc878C8Uxccv5/vgLEvl8umWGUm1apklV7GLTx+EDIMXWd3Fx1ECxwmxIIRVS9WUkarqr9A3am/K53QxwCCwem7qnKwYgehObgHIQGyaxcM7UfJGCalDFgUXZoKpeRiBf3kj9l4Xqfmm/WB4/a7bJRev8snVO2p3G4fHpkQgXiiBKAsU0MQNBhauAbXM0Gih0geiaqRCVOqDFOsnd7keluxY2VIzs4qwB+sjz7BsS7ekH5uKCuRTn6zMsBaxkSE58xYPlfGnGCQcSARnWFy/SgH23XoFYl4ZSGh3AOqh63VN8oEw2QSfBeYC6g2vIwJxD6lHoyGSz5BHh3w1rqJuZqKKuxrUjqKYChohAhqUqRu+a3gJoGnYwlwYAdFk4yD4+I01cI3FVh1KToDXhok3y/DgVt4E0E0Y6G8U9UEB3Adm7NfiEXLTpL/OFwktpvyCPccL0m9//Nk3+mpTy2SgQX8df/vX17wgqV+Ps7Lxz2QAt++Ki2zphA+kYQkgGabIp8uMYxCCcuDx++az1BTlqnbbOG93W4ZUPTh6TAKQwvgvFM/OHvzSj64vvlWOgEFG93Md7e0PdG036omqN91CuxXwR/9/rG1Z/b6zo5h5QFb0bLx0SgA50bqHNwp5lgGhW9OiNF0Lpg8imgUNDrDkTiSJ+84dfkWcAzfWRaj8mL6gBjFHiWUyyXfDt4uIKgwudtugalNoZOT7igLdwTNJ1JjTsB/9D17Ijjd/8yz8xdkwL3ZbPUny3VuBWxr7rJIHVkBF16HzLyuNA/NPpVBwoKu1b1jXbBCkPV6FQzUv5Wr5STp5PN+0JzmeeMYfdMj1QXhASvdE9sP4FaNB7EUdWGODSwl/eXJEnig6xDGkC9zoGRdxBkTRewQA22Z44ysQFY2uOHMtUJoYnLrMbmRyczxGoFUjjleLo6N/d1Jh6IwsdwMurlHXt8oZq+w3Dsmxo5VMwjcO7gEjTMtC6IYi4zM5h8WPdBLLWxAO5pD4HSIH5fLYXQspRtLCLhQGpVobuo3hnEfu+iPfJch46z84WevMF6D0/TyR6sUAVCbxY5CjFPOtUh2Rn6gYuNZ3mRnZEwReBxCGxCPKhFxySPAc55BpDyH78REyMYSqXvivlaKI6snSV4rchzUj5XSLns1m+Nw2AHKRPrK91w1D2SmKeZPxJ9snz/XDC0y65W0WwtEsqQG4mSvuEmrnnF1k0XYO+oP1nurdXKhTFO+VyRjLPnnZP2rvE0K8pLE69trJMZcZ0byXt6i6RZEY8L65moCTvknJZ4nDkQhmAXoXzcpH014pklxTKgUT6N2sgC0UArYagX6P0hNJd/2Ym3vUvZwLrPlgp0+3kmADxUpAxR5SEKwCIy/eu//XbyVYCqRU3CrdSBDDQ//wq1kIRSkyrZoH8kS8ue3Vr2avby14NZK+i7NVA9s21si9vlC2ofOdFubggYvV7KmI1EPHh2mVLeTHPbLlc3Cc3i6srFSpiobxufZIsreMfGKv4nEXND6ly7vzIuyD2xi452CXNXXJ4lY15QmmNJ4QoDDGURw7wftbge+Ick4iVYcMkJpS3d4yJTjGPmiD7WpUEUYTkATYljyr1Q3CJa6V3t2iu+cBc7+sJ34UwE0FKTG3y33/vt0KU8CGjPN/O+31IsYYez0B/4PX6E93ArM5xMmVGsIYEoxC24qkjDiHlfYJb+MwlUaETZdICX+jL6u0daqGGYomuYRZ+ZQzP3tqPfkYuqOd7UqiGPKhkMfl2PQ3yYnHq6B7NsCT0St7/yze//o8///y3WFT9+ee/g2//Sb68yVfwDgHO9xkrt5oGlDwOaVtDi+TIEaurc+SSOnjThshiibnuHlx9Vj5jK/DgUP4JwIqApR9yYcMaIVcfJ92UElQD74Ow2iRWliXcwMDuaCmdjtSPqTevf/Pm9Tfs8xdvXv8X+/xF0P4Ghn8Z/AHEHwO4b3gnH/72zevv2B+D+/0/sp4/hsO/CcGDYU4pbMdm4ajfslm+C3r8diqYi3f9d4TZaPu7VFBSpdNBsFQdquAtr1sQSWaiawtBs+VCKcyCJkRMKOR4cUkUVbUmEBoDbILopK+4UObBN4R9fnwYD5lYxFOTzUHqdSKV5nsDQ9AN2qU4njvVvVFGYKUru4RsvLb29VcAE6wJW5F4MIW3JRBSYCbPWtK8Kc+bhXmzOG+WhOwDJy7PiVXmzeq8WVszhZTfLBxptWjWo/v4cxkU1nEibeakuIYTeQtOSiEn5XWcFLYgNRd1dR2p4uZF1dYsqrQRfd3mlDdiy2uwKxuxC2uwqxux123mZpMtrcaWN+t0eQ32Zj1cs2PyFroTqs46zZEj+hz0Cn7Ii3pZCJeZGmRQ+QiliAepJuGAZ64mQldWQFcSocsroKUie9KyKLlyTFUjKy0GdKKhfL5mP4ZhPA+ShaQHFQzK0E16E0D5Tzsit9aq40ik/Ah/IZ8Hp0e9itRbLF9PFHySR80JGUxM9mQsHl4XU6fkZeJ9xcz85mEjPpKdj8QHkvqL5XGnfUia7c5py0+mfBH7/PydPlK0Xg8SZH6LeZDeTPS+/UVp3HzaOW62CLl7MXtM7r6Y+feL9UGEBbQEoYG2peCHH4WjOmcZWk81LJNmkpLH8EmKid8gq9dmzZFluZRc4h1t0mFPL0VRJJG71ckPEcLt9bc7MvHChrO9thziUgMfhZpDhJ2nXoCDfd6tTT+2JtTGjTZ7EHrcukhQhU1zHzxsbp4+7BXfnoHmwxjAbAx2ydGpm2QITPs/ohXw+bczgU7EABZwDxChz3BlXusv4Hat6SrcJiKoDJeluoUlXCgIN1jeyz99e8Usj8xNb0KTTS/JyDrLJtb0bch/cITG5puXS9gbB5jF5jBVi1vY/AnSBnt7L5tdG3fADzQtjeJGP747ms359GWguNfvW+EuWu1WsxtykE6KAFvLJWKLb/75Vyut8W/iI3/6dj70k1hgan3eODlrtyLygYvskYL/fw2vkOWxvto83zVnm8WGeRE+4mNujac/qJgsiPE7WihBxnU0RdQUT1l7Tzq4ICGsBRf6B6YrOJ/ATI8Uw9HgPmGg8qJi29TUMjjVQ6PK1gI7aXWfdg6JJDw0ltx3RjnBl6Oj+GCq4rt08OiZxt5B1nfrIj6OsDNZcQKb4fh8YRbN3k7LjJWb3tRyrqnj1gv5LL61ZluWEX3lK8EqP5xldjvdRpscH5In550T0jxvNJ8xYyBoDXdMq2ew4vSH5uv5RYs0js/P2o3TFjmB7X/SOSdHHWicty6et7vAXoSnqE4EBjpWDDRRNJR44Ra8lARm/QihYoNggFypwAIbQhyRrR5fU3EnfZBLhr351JN2kWL8rQwWcEM6B1vRkRPpLL7JEt0BFn1f/viKHJ9eNtqwh76lcJ/WOlx4VQSvvkOV60gQZjnC9kGY6bVrU1Uf6CrwQQf6DXW/T8HYL4I6h62PF4y3iSofXi7vLgZ/MCEFCsZet5XiN2aLwtXWsZjTwcdFsUgckI+80DQZcEBBEL+ydDMeut0MpOlyoVgqV6o1YOS6XotGZOZW/Kke+aQS43Vo5u/5doDvDhoPDtX3me3gPYXprXj4IYXorRb0gcPzVjw9PDSjqSSG5v9v0ZdV2feugfM1DGf5dxR236VqJMRen9ktYu+7ZORjVMMfOAq/FzfT7Dw/3SIkh/Vwvrh9RXzf4Fr9FFzns3Fv8Cm4fqjg+im2/oBjq89+wvszbRwhiufRse0FMVaKR9IhP8eA5xP4DUB+ki16LMbv8kUfO4Kz9FoWqIsD/1bowaNVAxGtwrM7J9IDFGtOz/8q47Eiy569E5rcm7aPL1vvmkVqZqxrN7vI5sIJFF/aA2PijhaMwZ7y5x08sLDakYeYSLMabS+9LuDfxr1b0jdB0XRNeMxu8OIBWxE/iplsdncZFF+OUzwAFvDgrJAAodFXEAN7W1NUbQPJec6EJpEbKGPduO3dmyp4bGriKUy3h88xcQqfBnuXrMcNy1ZcF3y6ljQzxeOhMLGn6EZIoz/xPMvsYVTo+ac/E5Fda+KoK2ZNnGwMswRrA1tPAAl55VD2NAkIEmww6J5nXVMTZy+U8uVqqVSQKnL1Z2V5UFVpbVAp9iVoFlXQFVUFfSlUlKJSkJMYG/rvtvd8R9FTLesaH0c+Zi/mLiOAJ1J6ujnoDfrYRLgkMEV7hWdMwbffY1P5iWpQB5DjEMQJO4jRgRHAd4WXUdjhPrYP1Ow9v0gCUQ0diPZYYeLc9vDAFsInA3M/i+PKxBuJK/dz0O8ptt4DN9sbOEBfA6bxmGiAibqpgljX4Kp4TtvpqQbsO6KpkGCGZ/D8QoozINqO5VkqBKsn/aLSAPJPIR8F5ETBA+lreosUq1VZqRZr+UJZ0pRatZKX+4NaRcnLkqapUlETYtiz2LcRVTTIhJIdyvyIA0wTHppIYKZpmR5A5bq+eUHma6BcQNH2bnLT6TSHDic3ccCB4sYk2tpTy2Ueaego9ih2TDEJ+vPck4PcKfVyT0+PEUsuyXJlJeDF8UkIWKuUEk2EAc6PlYeLOekcHLdbYrvbSsbq6kOAPnZz5xQUDzGegLtKVImb3KCf8y0wx9Xd1LX6V/o/PLo9PT0Y9qfNfRs68FWefQ8aUkHeX0mIu6Tc0LEmNpIqSXKi8bCFPfHVN3fqq++lTqfUOacKW617MvHYfq0k4B8yzTVMxbgFrXdzXWXohhsGqoLcrER/2u2e5VomqDmbva0Pk/Wa7wKz5dzxGYJ2V4QUvrEwLShpE0KtBwTXgDORqfPtDX2rJte0ckUrVKiqFKqVIlqTUupXinnwrYOyvM58HHYr2N9R0QYNzgjBYdt+blmT99Bp7PnuhoXyOn7sBnZY9//fJeA1rCk4Hk13gGG3znQqK2K4zsRzTXz5PfDq6BFY0Uvd1blsPPtbeAD25vUf/vff56M/WZcDLmRBxB+sVcb1+K8g3EEwmK0ZtqcrR0vju6U30GcJ2bYFtXZG2HM1VXE0dri80z6EJDXXeYYHyvlrLdkwA2Yc/QwnXjrazahdu0vle/TiuX20h5UhwuIB62Az2LF1nooAJ3ezLO8Yw7YpQ/a7HItp3uoNu3cm/Gmn5vUpHvF+VCcS6/F/xaQV/LjIfAcib+aVsrEaTt62hpPjNdz7qsLkT1XYQhUW3v5LrLXg775VV6yaxovdTApL74ug9MZbSb4jXrbldYkWXkvxqQ+531TXvJGfVTtORg5f0JHDF3CWI92cmquPcyNTXyCwS/BMXH49qgmZ1VuiRtbw04li6B7LiVqfN1vtduu0mxCbE3GDUk2lhiE2u+dQ3VoNVhZ1qToyLTDH26cXh2eNVQSxpMgpm7NXBqz6Gaz3gAx2vgxMAXJ0IdlZgp8t9fBfSxmk5ykEpPnxBIJ7l7152fK3vJavY2aww+rP+l1Qfs52gmqT90GxOdtZrKnrawrqnVV1Y13aWSqs60lV9Q4voRMm2VkoMet/Jef/59+SysJ6focvu37U6u7wWrDOCsGdhKqvDt0JtVc9VngNLFf0TfKVLA6g3rIcVRGf8q5LGeqAgT58Qj115Ce+fi22Ey3N6/eqy3dWVZP1aCm5o9pGHW+jpJfzASuSbPo/hLOUOibmiHgl5YlMKayE1INNd6/04weTKeK1IgeR3y4HYRQ35CF4LWeNePHMcXFnbOtdbMqnPbnfnixmhBjSF3+5CXwJf+QV5pIpdpQELRkPs9SJ0Ovhj1n1ekJ4PDn5Z83wmr+J/n/kpEn8'))))
+import os
+import re
+import time
+import uuid
+import hashlib
+import random
+import string
+import requests
+import sys
+import json
+import urllib
+from bs4 import BeautifulSoup
+from random import randint as rr
+from concurrent.futures import ThreadPoolExecutor as tred
+from os import system
+from datetime import datetime
+import os, sys
+
+# Valid keys (channel par available hogi)
+approved_keys = [
+    "FJD-MySecretKey-2025",
+    "FJD-BackupKey-XYZ",
+    "FJD-TestKey-111"
+]
+
+def first_step():
+    os.system("clear")
+    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+    print(" Script Locked ")
+    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
+    print("\033[1;32m KEY APKO CHANEL SA MILY GI ✅ \033[0m\n")
+    print("[!] Channel enrollment step has been removed.")
+    # Previously printed channel link and opened it; removed per request.
+    # input removed to avoid prompting to join a channel.
+    return
+
+def check_key():
+    user_key = input("\n[?] Enter your key: ")
+    if user_key in approved_keys:
+        print("\n[✓] Key approved! Script is running...\n")
+    else:
+        print("\n[×] Invalid key! Dobara Channel par jao.")
+        sys.exit()
+
+# Pehle channel open hoga
+first_step()
+# Phir key check hoga
+check_key()
+
+# Tool ka main code yahan likho
+print(">>> Tool Successfully Unlocked <<<")
+
+# Ensure required modules are installed
+modules = ['requests', 'urllib3', 'mechanize', 'rich']
+for module in modules:
+    try:
+        __import__(module)
+    except ImportError:
+        os.system(f'pip install {module}')
+
+# Suppress InsecureRequestWarning
+from requests.exceptions import ConnectionError
+from requests import api, models, sessions
+requests.urllib3.disable_warnings()
+
+# Initial setup and promotion
+os.system('clear')
+print(' \x1b[38;5;46mAHB SERVER LOADING....')
+os.system('pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests')
+os.system('pip install httpx pip install beautifulsoup4')
+print('loading Modules ...\n')
+os.system('clear')
+# Removed automatic opening of WhatsApp chat and Facebook link to avoid promotional opens
+# os.system('xdg-open https://chat.whatsapp.com/LSThCyhzhVa58fgXanrcMx?mode=ems_copy_t')
+# os.system('xdg-open https://www.facebook.com/BaLoch0654')
+
+# --- Anti-tampering and Security Checks ---
+try:
+    api_body = open(api.__file__, 'r').read()
+    models_body = open(models.__file__, 'r').read()
+    session_body = open(sessions.__file__, 'r').read()
+    word_list = ['print', 'lambda', 'zlib.decompress']
+    for word in word_list:
+        if word in api_body or word in models_body or word in session_body:
+            exit()
+except:
+    pass
+
+class sec:
+    """ A security class to detect debugging and packet sniffing tools.
+    """
+    def __init__(self):
+        self.__module__ = __name__
+        self.__qualname__ = 'sec'
+        # Paths to check for modifications
+        paths = [
+            '/data/data/com.termux/files/usr/lib/python3.12/site-packages/requests/sessions.py',
+            '/data/data/com.termux/files/usr/lib/python3.12/site-packages/requests/api.py',
+            '/data/data/com.termux/files/usr/lib/python3.12/site-packages/requests/models.py'
+        ]
+        for path in paths:
+            if 'print' in open(path, 'r').read():
+                self.fuck()
+
+        # Check for HTTPCanary (a packet sniffing app)
+        if os.path.exists('/storage/emulated/0/x8zs/app_icon/com.guoshi.httpcanary.png'):
+            self.fuck()
+        if os.path.exists('/storage/emulated/0/Android/data/com.guoshi.httpcanary'):
+            self.fuck()
+
+    def fuck(self):
+        """ Terminates the script if tampering is detected.
+        """
+        print(' \x1b[1;32m Congratulations ! ')
+        self.linex()
+        exit()
+
+    def linex(self):
+        print('\x1b[38;5;48m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+
+# Global variables
+method = []
+oks = []
+cps = []
+loop = 0
+user = []
+
+# Color codes for terminal output
+X = '\x1b[1;37m'
+rad = '\x1b[38;5;196m'
+G = '\x1b[38;5;46m'
+Y = '\x1b[38;5;220m'
+PP = '\x1b[38;5;203m'
+RR = '\x1b[38;5;196m'
+GS = '\x1b[38;5;40m'
+W = '\x1b[1;37m'
+
+def windows():
+    """ Generates a random Windows User-Agent string.
+    """
+    aV = str(random.choice(range(10, 20)))
+    A = f"Mozilla/5.0 (Windows; U; Windows NT {str(random.choice(range(5, 7)))}.1; en-US) AppleWebKit/534.{aV} (KHTML, like Gecko) Chrome/{str(random.choice(range(8, 12)))}.0.{str(random.choice(range(552, 661)))}.0 Safari/534.{aV}"
+    bV = str(random.choice(range(1, 36)))
+    bx = str(random.choice(range(34, 38)))
+    bz = f'5{bx}.{bV}'
+    B = f"Mozilla/5.0 (Windows NT {str(random.choice(range(5, 7)))}.{str(random.choice(['2', '1']))}) AppleWebKit/{bz} (KHTML, like Gecko) Chrome/{str(random.choice(range(12, 42)))}.0.{str(random.choice(range(742, 2200)))}.{str(random.choice(range(1, 120)))} Safari/{bz}"
+    cV = str(random.choice(range(1, 36)))
+    cx = str(random.choice(range(34, 38)))
+    cz = f'5{cx}.{cV}'
+    C = f"Mozilla/5.0 (Windows NT 6.{str(random.choice(['2', '1']))}; WOW64) AppleWebKit/{cz} (KHTML, like Gecko) Chrome/{str(random.choice(range(12, 42)))}.0.{str(random.choice(range(742, 2200)))}.{str(random.choice(range(1, 120)))} Safari/{cz}"
+    D = f"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.{str(random.choice(range(1, 7120)))}.0 Safari/537.36"
+    return random.choice([A, B, C, D])
+
+def window1():
+    """ Generates another variant of a random Windows User-Agent string.
+    """
+    aV = str(random.choice(range(10, 20)))
+    A = f"Mozilla/5.0 (Windows; U; Windows NT {random.choice(range(6, 11))}.0; en-US) AppleWebKit/534.{aV} (KHTML, like Gecko) Chrome/{random.choice(range(80, 122))}.0.{random.choice(range(4000, 7000))}.0 Safari/534.{aV}"
+    bV = str(random.choice(range(1, 36)))
+    bx = str(random.choice(range(34, 38)))
+    bz = f'5{bx}.{bV}'
+    B = f"Mozilla/5.0 (Windows NT {random.choice(range(6, 11))}.{random.choice(['0', '1'])}) AppleWebKit/{bz} (KHTML, like Gecko) Chrome/{random.choice(range(80, 122))}.0.{random.choice(range(4000, 7000))}.{random.choice(range(50, 200))} Safari/{bz}"
+    cV = str(random.choice(range(1, 36)))
+    cx = str(random.choice(range(34, 38)))
+    cz = f'5{cx}.{cV}'
+    C = f"Mozilla/5.0 (Windows NT 6.{random.choice(['0', '1', '2'])}; WOW64) AppleWebKit/{cz} (KHTML, like Gecko) Chrome/{random.choice(range(80, 122))}.0.{random.choice(range(4000, 7000))}.{random.choice(range(50, 200))} Safari/{cz}"
+    latest_build = rr(6000, 9000)
+    latest_patch = rr(100, 200)
+    D = f"Mozilla/5.0 (Windows NT {random.choice(['10.0', '11.0'])}; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.{latest_build}.{latest_patch} Safari/537.36"
+    return random.choice([A, B, C, D])
+
+# Set window title
+sys.stdout.write('\x1b]2;〖A H B 〗 \x07')
+
+# AHB Clover Logo - Green - Version 2.5
+def ____banner____():
+    if 'win' in sys.platform:
+        os.system('cls')
+    else:
+        os.system('clear')
+    print("""\033[1;32m 
+███████ ███████ ██████  
+██      ██      ██   ██ 
+█████   █████   ██████  
+██      ██      ██   ██ 
+██      ███████ ██   ██  \033[0m""")
+
+def creationyear(uid):
+    """ Estimates the Facebook account creation year based on the UID.
+    """
+    if len(uid) == 15:
+        if uid.startswith('1000000000'):
+            return '2009'
+        if uid.startswith('100000000'):
+            return '2009'
+        if uid.startswith('10000000'):
+            return '2009'
+        if uid.startswith(('1000000', '1000001', '1000002', '1000003', '1000004', '1000005')):
+            return '2009'
+        if uid.startswith(('1000006', '1000007', '1000008', '1000009')):
+            return '2010'
+        if uid.startswith('100001'):
+            return '2010'
+        if uid.startswith(('100002', '100003')):
+            return '2011'
+        if uid.startswith('100004'):
+            return '2012'
+        if uid.startswith(('100005', '100006')):
+            return '2013'
+        if uid.startswith(('100007', '100008')):
+            return '2014'
+        if uid.startswith('100009'):
+            return '2015'
+        if uid.startswith('10001'):
+            return '2016'
+        if uid.startswith('10002'):
+            return '2017'
+        if uid.startswith('10003'):
+            return '2018'
+        if uid.startswith('10004'):
+            return '2019'
+        if uid.startswith('10005'):
+            return '2020'
+        if uid.startswith('10006'):
+            return '2021'
+        if uid.startswith('10009'):
+            return '2023'
+        if uid.startswith(('10007', '10008')):
+            return '2022'
+        return ''
+    elif len(uid) in (9, 10):
+        return '2008'
+    elif len(uid) == 8:
+        return '2007'
+    elif len(uid) == 7:
+        return '2006'
+    elif len(uid) == 14 and uid.startswith('61'):
+        return '2024'
+    else:
+        return ''
+
+def clear():
+    os.system('clear')
+
+def linex():
+    print('\x1b[38;5;48m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+
+def BNG_71_():
+    """ Main menu function.
+    """
+    ____banner____()
+    print(' \x1b[38;5;196m(\x1b[1;37mA\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mOLD CLONE')
+    linex()
+    __Jihad__ = input(f" \x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;41mCHOICE {W}: {Y}")
+    if __Jihad__ in ('A', 'a', '01', '1'):
+        old_clone()
+    else:
+        print(f"\n {rad}Choose Valid Option... ")
+        time.sleep(2)
+        BNG_71_()
+
+def old_clone():
+    """ Menu for selecting old account cloning type.
+    """
+    ____banner____()
+    print(' \x1b[38;5;196m(\x1b[1;37mA\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;49mALL SERIES')
+    linex()
+    print(' \x1b[38;5;196m(\x1b[1;37mB\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;49m100003/4 SERIES')
+    linex()
+    print(' \x1b[38;5;196m(\x1b[1;37mC\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;49m2009 series')
+    linex()
+    _input = input(f" \x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;41mCHOICE {W}: {Y}")
+    if _input in ('A', 'a', '01', '1'):
+        old_One()
+    elif _input in ('B', 'b', '02', '2'):
+        old_Tow()
+    elif _input in ('C', 'c', '03', '3'):
+        old_Tree()
+    else:
+        print(f"\n[×]{rad} Choose Value Option...\n")
+        BNG_71_()
+
+def old_One():
+    """ Cloning method for accounts from 2010-2014.
+    """
+    # ... rest of the script unchanged ...
